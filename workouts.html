@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Meta information about the webpage -->
+<head>
+    <title>Plant fueled workouts</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a website for a community of people interested in plant based nutrition and bodybuilding.">
+    <meta name="author" content="Jakub Grabarczyk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Plant-based nutrition bodybuilding">
+    <link href="StyleSheets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- Structure and content of the webpage -->
+<body>
+<div class="grid-container-index">
+    <header>
+        <!-- Upper navbar with hyperlinks to other parts of the website -->
+        <nav>
+            <ul>
+                <li>
+                    <ion-icon id="icon-top" name="leaf-outline"></ion-icon>
+                </li> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a class="active-page" href="workouts.html">Workouts</a></li>
+                <li><a href="supplements.html">Supplements</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Actual content of the page, containing articles and filtering code -->
+    <div class="page-content-wrapper">
+        <div class="page-title">
+            <h2>Plant fueled workouts</h2>
+        </div>
+    
+        <!-- Dropdown menu allowing for filtering articles by one of the features provided -->
+        <div class="dropdown">
+            <button class="dropbtn">Filter</button>
+            <div class="dropdown-content">
+                <p id="push">Push</p>
+                <p id="pull">Pull</p>
+                <p id="legs">Legs</p>
+            </div>
+          </div>
+    
+          <!-- Articles and their content together with hyperlinks to relevant pages -->
+          <div class="article-wrapper">
+            <div id="article1">
+                <div class="article-content">
+                    <div class="article-text">
+                        <h2>Push exercises for aesthetics</h2>
+                        <p>Push workout is probably most important for everyone chasing that aesthetc physique. 
+                            Massive chest? Capped shoulders? Filled out t-shirts? This is where you find it. 
+                        </p>
+                        <p><a href="https://hugesupplements.com/blogs/content/push-day-workout">Read more...</a></p></div>
+                    </div>
+                <div class="article-content">
+                    <img class="article-image" src="img/push.jpg" alt="">
+                </div>
+            </div>
+            <div id="article2">
+                <div class="article-content">
+                    <img class="article-image" src="img/pull.jpg" alt="">
+                </div>
+                <div class="article-content">
+                    <div class="article-content">
+                        <div class="article-text">
+                            <h2>Wide back, huge biceps</h2>
+                            <p>Pull workout is resposible for that V-shape. Massive lats and juicy biceps 
+                                are what makes the physiqe look great!
+                            </p>
+                            <p><a href="https://ladder.sport/pages/pull-day-workout/">Read more...</a></p></div>
+                        </div>
+                </div>
+            </div>
+            <div id="article3">
+                <div class="article-content">
+                    <div class="article-content">
+                        <div class="article-text">
+                            <h2>Juicy legs</h2>
+                            <p>Legs are often neglected, but can be more important than other muscle groups. 
+                                They help with bringing the physique to another level, as well as help you 
+                                to burn more calories. 
+                            </p>
+                            <p><a href="https://hugesupplements.com/blogs/content/leg-day-workout">Read more...</a></p></div>
+                        </div>
+                </div>
+                <div class="article-content">
+                    <img class="article-image" src="img/legs.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Button allowing for setting search to default - all articles showing up -->
+        <div class="button">
+            <button id="set-default-button">All articles</div>
+            </div>
+    </div>
+
+    <script src="scripts/filter_workouts.js"></script>
+
+    <footer>
+        <!-- Footer with navigation bar, links back to the index.html and about.html -->
+        <ul id="front-page-footer">
+            <li><a href="index.html"><ion-icon id="icon-bottom" name="leaf-outline"></ion-icon></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+
+        </ul>
+</footer>
+
+</div>
+
+<!-- Script allowing for usage of icons throughot the website -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

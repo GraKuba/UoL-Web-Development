@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Meta information about the webpage -->
+<head>
+    <title>Plant Based Nutrition</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a website for a community of people interested in plant based nutrition and bodybuilding.">
+    <meta name="author" content="Jakub Grabarczyk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Plant-based nutrition bodybuilding">
+    <link href="StyleSheets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- Structure and content of the webpage -->
+<body>
+<div class="grid-container-index">
+    <header>
+        <!-- Upper navbar with hyperlinks to other parts of the website -->
+        <nav>
+            <ul>
+                <li>
+                    <ion-icon id="icon-top" name="leaf-outline"></ion-icon>
+                </li> 
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active-page" href="nutrition.html">Nutrition</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="supplements.html">Supplements</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Actual content of the page, containing articles and filtering code -->
+    <div class="page-content-wrapper">
+        <div class="page-title">
+            <h2>Plant based nutrition</h2>
+        </div>
+    
+        <!-- Dropdown menu allowing for filtering articles by one of the features provided -->
+        <div class="dropdown">
+            <button class="dropbtn">Filter</button>
+            <div class="dropdown-content">
+                <p id="preworkout">Preworkout</p>
+                <p id="cutting">Cutting</p>
+                <p id="highProtein">High Protein</p>
+            </div>
+          </div>
+    
+        <!-- Articles and their content together with hyperlinks to relevant pages -->
+        <div class="article-wrapper">
+            <div id="article1">
+                <div class="article-content">
+                    <div class="article-text">
+                        <h2>Preworkout meals loaded with carbs</h2>
+                        <p>Preworkout meal is the most important meal of the day. It fuels your training, provides 
+                            amino-acids and jump starts your regeneration.
+                        </p>
+                        <p><a href="https://www.myprotein.com/thezone/nutrition/vegan-pre-workout-foods/">Read more...</a></p></div>
+                    </div>
+                <div class="article-content">
+                    <img class="article-image" src="img/pre-workout-meal.jpg" alt="">
+                </div>
+            </div>
+            <div id="article2">
+                <div class="article-content">
+                    <img class="article-image" src="img/high-protein-meal.jpg" alt="">
+                </div>
+                <div class="article-content">
+                    <div class="article-content">
+                        <div class="article-text">
+                            <h2>Low calorie meals</h2>
+                            <p>Your meals while cutting are going to be much different to what you eat normally. 
+                                Volume eating, while maximizing protein intake is going to be key to success. 
+                            </p>
+                            <p><a href="https://www.greatestphysiques.com/fitness/vegan-cutting-diet/">Read more...</a></p></div>
+                        </div>
+                </div>
+            </div>
+            <div id="article3">
+                <div class="article-content">
+                    <div class="article-content">
+                        <div class="article-text">
+                            <h2>Plant based protein dinners</h2>
+                            <p>Consisency is going to be the most important in building muscle. That's why it is 
+                                smart to have a rotation of multiple high-protein meals in your diet. 
+                            </p>
+                            <p><a href="https://www.emilieeats.com/high-protein-vegan-dinners/">Read more...</a></p></div>
+                        </div>
+                </div>
+                <div class="article-content">
+                    <img class="article-image" src="img/cutting-meal.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Button allowing for setting search to default - all articles showing up -->
+        <div class="button">
+            <button id="set-default-button">All articles</button>
+        </div>
+    </div>
+
+    <script src="scripts/filter_nutrition.js"></script>
+
+    <footer>
+        <!-- Footer with navigation bar, links back to the index.html and about.html -->
+        <ul id="front-page-footer">
+            <li><a href="index.html"><ion-icon id="icon-bottom" name="leaf-outline"></ion-icon></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+
+        </ul>
+</footer>
+
+</div>
+
+<!-- Script allowing for usage of icons throughot the website -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
