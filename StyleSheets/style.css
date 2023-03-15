@@ -1,0 +1,325 @@
+
+
+/*Common CSS*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+
+/*Navbar CSS*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3e8e41;
+  height: 50px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 64px;
+  text-decoration: none;
+}
+
+.active-page {
+  background-color: black;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+/*Footers CSS*/
+
+/*index.html*/
+#front-page-footer {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  justify-items: center;
+  margin: 20px;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/*supplements, nutrition, workouts .html*/
+#about-page-footer {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  justify-items: center;
+  margin: 10px;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  position: absolute;
+  bottom: 0;
+  width: 97%;   
+  padding: 10px;
+}
+
+
+/*Dropdown button CSS*/
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 160px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Different colour on hover */
+.dropdown-content p:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+/*Set default - button CSS*/
+
+#set-default-button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/*change colour on hover*/
+#set-default-button:hover {background-color: #3e8e41;}
+ 
+
+
+/*index.html CSS*/
+
+.front-page-featured-articles {
+  text-align: center;
+}
+
+.front-page-article {
+  display: inline-block;
+  padding: 20px;
+  border: 2px;
+  background-color: rgb(154, 203, 154);
+  vertical-align: middle;
+  width: 445px;
+  height: 170px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+#front-page-highlight {
+  position: relative;
+  text-align: center;
+}
+
+#front-page-highlight-title {
+  position: absolute;
+  top: 550px;
+  left: 400px;
+  color: white;
+}
+
+#front-page-highlight-description {
+  position: absolute;
+  top: 600px;
+  left: 400px;
+  color: white;
+  width: 400px;
+  text-align: left;
+}
+
+#front-page-highlight-read-more {
+  position: absolute;
+  top: 660px;
+  left: 400px;
+  color:#04AA6D;
+}
+
+
+#front-page-highlight-image {
+  width: 972px;
+  height: 650px;
+  padding: 10px;
+}
+
+#front-page-content-wrapper {
+  text-align: center;
+}
+
+#front-page-recommended-resources {
+  text-align: center;
+}
+
+#front-page-recommended-image {
+  width: 440px;
+  height: 300px;
+  text-align: right;
+  
+}
+
+.front-page-recommended-content {
+  display: inline-block;
+  padding: 20px;
+  border: 2px;
+  vertical-align: middle;
+  width: 445px;
+  height: 270px;
+  text-align: left;
+  background-color: rgb(154, 203, 154);
+  width: 445px;
+  height: 300px;
+  border-radius: 5px;
+
+}
+
+
+/*nutrition.html, workouts.html and supplements.html CSS*/
+
+.article-image {
+  width: 420px;
+  height: 420px;
+  border-radius: 5px;
+
+}
+
+#article1 {
+  text-align: center;
+  padding: 10px;
+}
+
+#article2 {
+  text-align: center;
+  padding: 10px;
+}
+
+#article3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.article-content {
+  display: inline-block;
+  background-color: rgb(154, 203, 154);
+  vertical-align: middle;
+  width: 420px;
+  height: 420px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.article-text {
+  padding: 20px;
+}
+
+.page-content-wrapper {
+  text-align: center;
+}
+
+
+/* about.html page content*/
+
+#about-text {
+  width: 400px;
+  height: 50px;
+  background-color: rgb(154, 203, 154);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#contact-info {
+  width: 400px;
+  height: 50px;
+  display: inline-block;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.link {
+  padding: 20px
+  border 20px;
+  font-size: 50px;
+}
+
+
+
+/*Icon script CSS*/
+
+#icon-top {
+  font-size: 50px;
+}
+
+#icon-bottom {
+  font-size: 25px;
+  padding: 0;
+}
+
+
+/* Report.html CSS*/
+
+.report {
+  padding: 5px;
+  font-size: medium;
+  max-width: 900px;
+}
